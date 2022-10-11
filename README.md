@@ -17,8 +17,8 @@ This Facial recognition security device will check whether a person is registere
 - The servomotor is connected to the GND pin and GPIO pin 25.
 - The LCD screen is connected on pins SDA1, SCL1, 5V and GND.
 - The LEDs are connected on pins GPIO 26 (green) and GPIO 27 (red) and the buzzer is connected on pins GPIO 23 and GND.
-
+![Schematics](https://user-images.githubusercontent.com/73520531/195213791-49ac2313-d4c7-42a8-bb8c-44df3a115032.jpg)
 ## Code Explaination
 - Run the facial_dataset.py code first. This code will take 50 photos of a user and will save it in a folder "dataset". Make sure to input different user id for different users.
 - Run the facial_recognition_training.py code after that. This code recognises the frontal face from the 50 photos captured and trains the code to recognise it as the specified user by following "haarcascade_frontalface_default.xml".
-- In the end, run the main.py code for the final setup.  
+- In the end, run the main.py code for the final setup.
