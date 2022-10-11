@@ -1,5 +1,5 @@
 # Facial-Recognition-Door-Lock
-This project code is for a Facial Recognition Door Lock with Keypad PIN Input on Raspberry Pi
+This project code is for a Facial Recognition Door Lock with PIN input from keypad on Raspberry Pi
 ## Functional features
 This Facial recognition security device will check whether a person is registered to enter or not along with a passcode entry system if the face is not detected. The face is detected via a camera, which is connected to Raspberry Pi. If the person’s face is detected, the buzzer will buzz once with a green LED and the servomotor won't move (0 degrees). The program tries to detect a face for 20 seconds. If not, it will display a message on an LCD screen and the user will be asked to enter the passcode, all connected to Raspberry Pi. If entered correctly the servomotor will move up (180 degrees) and if not, the buzzer will buzz with a red LED and the servomotor stays at the rest position (0 degrees).
 ## Components required
@@ -23,5 +23,5 @@ This Facial recognition security device will check whether a person is registere
 
 ## Code Explaination
 - Run the [facial_dataset.py](https://github.com/DhruvalShah199/Facial-Recognition-Door-Lock/blob/main/Codes/facial_dataset.py) code first. This code will take 50 photos of a user and will save it in a folder "dataset". Make sure to input different user id for different users.
-- Run the [facial_recognition_training.py](https://github.com/DhruvalShah199/Facial-Recognition-Door-Lock/blob/main/Codes/facial_recognition_training.py) code after that. This code recognises the frontal face from the 50 photos captured and trains the code to recognise it as the specified user by following "haarcascade_frontalface_default.xml".
+- Run the [facial_recognition_training.py](https://github.com/DhruvalShah199/Facial-Recognition-Door-Lock/blob/main/Codes/facial_recognition_training.py) code after that. This code recognises the frontal face from the 50 photos captured and trains the code to recognise it as the specified user by following "[haarcascade_frontalface_default.xml](https://github.com/DhruvalShah199/Facial-Recognition-Door-Lock/blob/main/Codes/haarcascade_frontalface_default.xml)".
 - In the end, run the [main.py](https://github.com/DhruvalShah199/Facial-Recognition-Door-Lock/blob/main/Codes/main.py) code for the final setup.
