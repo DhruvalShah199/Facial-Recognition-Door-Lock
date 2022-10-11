@@ -23,5 +23,5 @@ This Facial recognition security device will check whether a person is registere
 
 ## Code Explaination
 - Run the [facial_dataset.py](Codes/facial_dataset.py) code first. This code will take 50 photos of a user and will save it in a folder "dataset". Make sure to input different user id for different users.
-- Run the facial_recognition_training.py code after that. This code recognises the frontal face from the 50 photos captured and trains the code to recognise it as the specified user by following "haarcascade_frontalface_default.xml".
+- Run the [facial_recognition_training.py](https://github.com/DhruvalShah199/Facial-Recognition-Door-Lock/blob/main/Codes/facial_recognition_training.py) code after that. This code recognises the frontal face from the 50 photos captured and trains the code to recognise it as the specified user by following "haarcascade_frontalface_default.xml".
 - In the end, run the main.py code for the final setup.
